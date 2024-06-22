@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styleslider.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="chatbox">
+        <button class="chatBtn">
+            <svg height="1.6em" fill="white" xml:space="preserve" viewBox="0 0 1000 1000" y="0px" x="0px" version="1.1">
+                <path
+                    d="M881.1,720.5H434.7L173.3,941V720.5h-54.4C58.8,720.5,10,671.1,10,610.2v-441C10,108.4,58.8,59,118.9,59h762.2C941.2,59,990,108.4,990,169.3v441C990,671.1,941.2,720.5,881.1,720.5L881.1,720.5z M935.6,169.3c0-30.4-24.4-55.2-54.5-55.2H118.9c-30.1,0-54.5,24.7-54.5,55.2v441c0,30.4,24.4,55.1,54.5,55.1h54.4h54.4v110.3l163.3-110.2H500h381.1c30.1,0,54.5-24.7,54.5-55.1V169.3L935.6,169.3z M717.8,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.5,24.7,54.5,55.2C772.2,420.2,747.8,444.8,717.8,444.8L717.8,444.8z M500,444.8c-30.1,0-54.4-24.7-54.4-55.1c0-30.4,24.3-55.2,54.4-55.2c30.1,0,54.4,24.7,54.4,55.2C554.4,420.2,530.1,444.8,500,444.8L500,444.8z M282.2,444.8c-30.1,0-54.5-24.7-54.5-55.1c0-30.4,24.4-55.2,54.5-55.2c30.1,0,54.4,24.7,54.4,55.2C336.7,420.2,312.3,444.8,282.2,444.8L282.2,444.8z">
+                </path>
+            </svg>
+            <span class="tooltip">Chat</span>
+        </button>
+    </div>
+    <!-- <button class="chatBtn-1">CLick Me</button> -->
+
+    <!-- <div class="myElement"></div> -->
+   
+
+    <div class="chat-container" id="myElement">
+		<div class="chat-window">
+		  <div class="chat-area">
+			<div class="chat-messages">
+			  <!-- Chat Messages -->
+			</div>
+		  </div>
+		  <div class="user-input">
+			<input type="text" id="message-input" placeholder="Type your message...">
+			<button id="send-button">Send</button>
+		  </div>
+		</div>
+	  </div>
+
+    <div class="wrapper">
+        <div class="centeredBox"> 
+            <span id="typewriter" data-array=""></span>
+            <span class="cursor"></span>
+        </div>
+    </div>
+
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="brand">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="navbar-links">
+                    <ul>
+                        <li class="nav-item"><a href="#">Features</a></li>
+                        <li><div>
+                            <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox" class="checkbox-label">
+                              <i class="fas fa-moon"></i>
+                              <i class="fas fa-sun"></i>
+                              <span class="ball"></span>
+                            </label>
+                          </div>
+                          
+                          </li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainbtn">
+                <button class="Btn">
+                    <div class="sign"><svg viewBox="0 0 512 512" onclick=signInWithPopup>
+                            <path
+                                d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z">
+
+                            </path>
+                        </svg></div>
+                    <div class="text" id="g-login"><a href="login.html">Login</a></div>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <hr>
+
+    <section class="main">
+
+        <section class="left">
+            <img src="https://media.tenor.com/967iXWRvXaMAAAAj/capsulland-peeking.gif" jsaction="VQAsE" id="hellooo" class="sFlh5c pT0Scc iPVvYb" style="width: 176px; height: 100px; margin: 0px;" alt="Wall GIFs | Tenor" jsname="kn3ccd">
+            <!-- <div class="tenor-gif-embed" data-postid="17532193" data-share-method="host" data-aspect-ratio="1.1985" data-width="100%"><a href="https://tenor.com/view/hide-transparent-qoobee-cute-gif-17532193">Hide Transparent Sticker</a>from <a href="https://tenor.com/search/hide-stickers">Hide Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+            <div id="nav-bar">
+                <input id="nav-toggle" type="checkbox"/>
+                <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">O<i class="fab fa-codepen"></i>PEN-CODE
+                </a>
+                  <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                  <hr/>
+                </div>
+                <div id="nav-content">
+                  <div  class="nav-button"><i class="fas fa-palette"></i><span>Project History</span></div>
+                  <div class="nav-button"><i class="fas fa-images"></i><span>Contributions</span></div>
+                  <div class="nav-button"><i class="fas fa-thumbtack"></i><span>Issues</span></div>
+                  <hr/>
+                  <div class="nav-button"><i class="fas fa-heart"></i><span>Following</span></div>
+                  <div class="nav-button"><i class="fas fa-chart-line"></i><span>Explore</span></div>
+                  <div class="nav-button"><i class="fas fa-fire"></i><span>Challenges</span></div>
+                  <div class="nav-button"><i class="fas fa-magic"></i><span>Newsletters</span></div>
+                  <hr/>
+                  <div class="nav-button"><i class="fas fa-gem"></i><span>Open-Code</span></div>
+                  <div id="nav-content-highlight"></div>
+                </div>
+                <input id="nav-footer-toggle" type="checkbox"/>
+                <div id="nav-footer">
+                  <div id="nav-footer-heading">
+                    <div id="nav-footer-avatar"><img src="https://gravatar.com/avatar/4474ca42d303761c2901fa819c4f2547"/></div>
+                    <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://codepen.io/uahnbu/pens/public" target="_blank">Avinash</a><span id="nav-footer-subtitle">Admin</span></div>
+                    <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+                  </div>
+                  <div id="nav-footer-content">
+                    <Lorem>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Lorem>
+                  </div>
+                </div>
+              </div>
+            <div class="history">
+                Previous tabs and projects
+            </div>
+        </section>
+
+
+
+        <section class="right">
+            <p></p>
+            <div class="options" id="fileInput">
+                <input type="file" text="New" class="open-file">
+            </div>
+            <input type="text">
+            <div class="font-editing">
+                <button onclick="document.execCommand('bold', false, null)">Bold</button>
+                <button onclick="document.execCommand('italic', false, null)">Italic</button>
+                <button onclick="document.execCommand('underline', false, null)">Underline</button>
+                <button onclick="clearText()">Clear</button>
+
+            </div>
+
+            <div class="text-area" id="output" contenteditable="true"
+                style="border: 1px solid #ccc; padding: 10px; min-height: 200px;"></div>
+
+            <script>
+                function clearText() {
+                    var textArea = document.querySelector('[contenteditable="true"]');
+                    textArea.textContent = '';
+                }
+
+
+                document.getElementById('fileInput').addEventListener('change', function (e) {
+                    const file = e.target.files[0];
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        const contents = e.target.result;
+                        document.getElementById('output').textContent = contents;
+                    };
+
+                    reader.readAsText(file);
+                });
+
+                function toggleDarkMode() {
+                    const body = document.body;
+                    const textArea = document.getElementById('output');
+
+                    body.classList.toggle('dark-mode');
+                    textArea.classList.toggle('dark-mode');
+                }
+
+                document.getElementById('fileInput').addEventListener('change', function (e) {
+                    const file = e.target.files[0];
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        const contents = e.target.result;
+                        document.getElementById('output').textContent = contents;
+                    };
+
+                    reader.readAsText(file);
+                });
+
+            </script>
+
+        </section>
+    </section>
+
+</body>
+<script>function sendMessage() {
+    const messageInput = document.getElementById('message-input');
+    const message = messageInput.value.trim();
+    if (message !== '') {
+      const chatMessages = document.querySelector('.chat-messages');
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('message');
+      messageElement.textContent = message;
+      chatMessages.appendChild(messageElement);
+      messageInput.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  }
+  
+  // Event listener
+  document.getElementById('send-button').addEventListener('click', sendMessage);
+  document.getElementById('message-input').addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      sendMessage();
+    }
+  });</script>
+<script>const checkbox = document.getElementById("checkbox")
+    checkbox.addEventListener("change", () => {
+      document.body.classList.toggle("dark")
+    })</script>
+<script>
+    document.querySelector(".chatbox").addEventListener("click", function(){
+  document.querySelector(".chat-container").classList.toggle("hidden");
+});
+document.querySelector(".chat-close").addEventListener("click", function(){
+  document.querySelector(".chat-container").classList.toggle("hidden");
+});
+</script>
+<script src="main.js"></script>
+<script>
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+    import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyBvtyJWPiCejQ9aOPXyWifb60EtTujnEZY",
+        authDomain: "fir-start-e1999.firebaseapp.com",
+        projectId: "fir-start-e1999",
+        storageBucket: "fir-start-e1999.appspot.com",
+        messagingSenderId: "7736374049",
+        appId: "1:7736374049:web:4b1da54903ffc448b1c460",
+        measurementId: "G-FM5JFGHH4X"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    auth.languageCode = 'en';
+    const analytics = getAnalytics(app);
+    const provider = new GoogleAuthProvider();
+
+    const googleLogin = document.getElementById("g-login");
+    googleLogin.addEventListener("click", function () {
+        signInWithPopup(auth, provider)
+            .then((result) => {
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const user = result.user;
+                console.log(user);
+                window.location.href = "https://www.google.com";
+
+            }).catch((error) => {
+
+                const errorCode = error.code;
+                const errorMessage = error.message;
+
+
+            });
+    })
+    console.log(5);
+
+    function toggleSlide() {
+    var element = document.getElementById('myElement');
+    var currentPosition = parseInt(element.style.left) || 0;
+    if (currentPosition === 0) {
+      element.style.left = '100px';
+    } else {
+      element.style.left = '0';
+    }
+    console.log("hello");
+  }
+
+  function changeZIndex(element) {
+        if (element.style.zIndex == "5") {
+            element.style.zIndex = "-1";
+        } else {
+            element.style.zIndex = "-1";
+        }
+    }
+</script>
+<script>
+    // The typewriter element
+var typeWriterElement = document.getElementById('typewriter');
+
+// The TextArray: 
+var textArray = ["Coding is fun...","Join coding environment with friends.","This is our Java Project.", "Code with Ease."];
+
+// You can also do this by transfering it through a data-attribute
+// var textArray = typeWriterElement.getAttribute('data-array');
+
+
+// function to generate the backspace effect 
+function delWriter(text, i, cb) {
+	if (i >= 0 ) {
+		typeWriterElement.innerHTML = text.substring(0, i--);
+		// generate a random Number to emulate backspace hitting.
+ 		var rndBack = 10 + Math.random() * 100;
+		setTimeout(function() {
+			delWriter(text, i, cb);
+		},rndBack); 
+	} else if (typeof cb == 'function') {
+		setTimeout(cb,1000);
+	}
+};
+
+// function to generate the keyhitting effect
+function typeWriter(text, i, cb) {
+	if ( i < text.length+1 ) {
+		typeWriterElement.innerHTML = text.substring(0, i++);
+		// generate a random Number to emulate Typing on the Keyboard.
+		var rndTyping = 250 - Math.random() * 100;
+		setTimeout( function () { 
+			typeWriter(text, i++, cb)
+		},rndTyping);
+	} else if (i === text.length+1) {
+		setTimeout( function () {
+			delWriter(text, i, cb)
+		},1000);
+	}
+};
+
+// the main writer function
+function StartWriter(i) {
+	if (typeof textArray[i] == "undefined") {
+		setTimeout( function () {
+			StartWriter(0)
+		},1000);
+	} else if(i < textArray[i].length+1) {
+		typeWriter(textArray[i], 0, function (){
+			StartWriter(i+1);
+		});
+	}  
+};
+// wait one second then start the typewriter
+setTimeout( function () {
+	StartWriter(0);
+},1000);
+	
+</script>
+
+
+</html>
